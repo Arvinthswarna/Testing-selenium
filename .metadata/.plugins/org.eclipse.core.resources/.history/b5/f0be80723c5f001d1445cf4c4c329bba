@@ -1,0 +1,27 @@
+package mytest;
+
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Tour{
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "D:\\Testingselenium\\chromedriver_win32\\chromedriver.exe");
+		WebDriver obj = new ChromeDriver();
+		
+		obj.get("http://127.0.0.1:5500/Travel/tour.html");
+		obj.findElement(By.id("j_tourId")).sendKeys("1");
+		obj.findElement(By.name("j_tourName")).sendKeys("ooty package");
+		obj.findElement(By.name("j_tourCost")).sendKeys("10000");
+		obj.findElement(By.name("j_tourDays")).sendKeys("10");
+		
+		obj.findElement(By.xpath("/html/body/div/div/form/div[4]/button")).click();
+		obj.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
+		obj.findElement(By.xpath("//* [@id=\"page-header\"]/div[3]/a[2]/span")).click();
+		obj.quit();
+		
+
+	}}

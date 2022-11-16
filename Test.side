@@ -1,0 +1,91 @@
+{
+  "id": "1d90740a-0228-4fa8-ae8f-dfd52275a8fb",
+  "version": "2.0",
+  "name": "Test",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "77cf2734-c3fe-48a0-b802-1d85098f0668",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "35e86a5b-876d-49ed-8228-8692917248cf",
+    "name": "Test1",
+    "commands": [{
+      "id": "061e7317-1461-460e-8c4e-7dc587c6b87f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3a89ff9-5124-4243-b467-766d78ffb036",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "808x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac69f354-1154-4992-ae6b-6fc08e8c4638",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "hello chennai"
+    }, {
+      "id": "90b3718e-1db6-4eee-b361-b0e94f88ce80",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e672faa2-ebeb-47ff-b6c5-ba4c7064c597",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,331.20001220703125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ecdcd76-9c33-4518-b3be-36f648920375",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,666.4000244140625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dea24e9f-2ae9-4756-855c-a8a011861d7e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,865.5999755859375)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32ec6dfb-b490-4945-be79-40784e37a8b0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1ab6efa2-ccf6-4830-86ba-12ac32551ad8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["77cf2734-c3fe-48a0-b802-1d85098f0668"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
